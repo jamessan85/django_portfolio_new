@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class="body-container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2>{{ project.project_name }}</h2>
+                <p>{{ project.project_description }}</p>
+            </div>     
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="/media/{{ project.project_image_high_res }}" height="600" width="900">
+            </div>
+        </div>
+</div>     
+{% endblock %}

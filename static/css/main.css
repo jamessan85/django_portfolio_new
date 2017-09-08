@@ -1,0 +1,72 @@
+body {
+    background-color:  #f2f5f0;
+    width: 100%;
+ }
+
+ h1 {
+     font-family: 'VT323', monospace;
+     font-size: 10em;
+ }
+
+ h2 {
+     color: #6b6d70;
+     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+ }
+
+ .body-container {
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+     margin-top: 50px;
+     height: 400px;
+ }
+
+ .body-container1{
+     text-align: center;
+     display: none;
+     top: 10px;
+     width: 100%;
+     height: 100%;
+     margin-bottom: 100px;
+     background-color:#222;
+     padding-top: 25px;
+ }
+
+ .fa-arrow-circle-up {
+     color: #6b6d70;
+     text-decoration: none;
+     padding-bottom: 5px;
+ }
+
+ .col-sm-6 {
+     text-align: center;
+ }
+
+ .form {
+     text-align: left;
+ }
+
+ .sendbutton {
+   height: 50px;
+   width: 150px;
+   color: #6b6d70;
+   border: none;
+   background-color: #dde0db;
+   border-radius: 5px;
+   box-shadow: 7px 7px 10px #363531;
+ }
+
+.sendbutton.Animate {
+  transition        : .1s linear;
+  /**
+   * Not that ugly as the JavaScript approach.
+   * Easy to maintain, the most portable solution.
+   */
+  -webkit-transform : rotate(7deg);
+}
+
+.modal-content{
+  background-color: #f2f5f0;
+
+}

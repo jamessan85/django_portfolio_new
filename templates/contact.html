@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block head_js %}
+<script type="text/javascript" src="{% static "js/main.js" %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+{% endblock %}
+{% block content %}
+<div class="body-container">
+    <div class="col-sm-6 col-sm-offset-3 form">
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form|as_bootstrap }}
+    <input type="submit" value="Submit" />
+</form>
+    </div>
+</div>
+{% endblock %}
