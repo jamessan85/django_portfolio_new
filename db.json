@@ -1,0 +1,156 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$5cPhNhAiANrz$uCbrhTfNoa1lNl0YQquOQFsD8ea0BxtoVykrIcDiw4U=",
+        "last_login": "2017-08-29T18:50:54.666Z",
+        "is_superuser": true,
+        "username": "administrator",
+        "first_name": "",
+        "last_name": "",
+        "email": "jamessandersoon@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-08-29T18:47:25.614Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$hM2HMhku3mCo$+dFVBe3eseAF79e4T2E25QPzCFTKRAV9nf+VNwVYMZs=",
+        "last_login": "2017-09-06T06:14:16.389Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "jamessandersoon@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-09-06T06:14:05.398Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0eg61ud05od54waxk013ef4vkjpr6th3",
+    "fields": {
+        "session_data": "NWM3ZWEzNzE0YjU5YmVlNmI2NDAxNjM2N2Y3YmYzMDkzZmIxMmZmYjp7Il9hdXRoX3VzZXJfaGFzaCI6IjdkZjUwNDYyY2UwZmIxMmJmNzE5ZmE3NjY2ZjVlMDcxMjE5NWE0OTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2017-09-12T18:50:54.680Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bz95wehmnxyr0qdt5swyjaaoj9feg0jp",
+    "fields": {
+        "session_data": "ZDJhOTljZTFlMmM3ZTBlOWNmMDdkNzFlYWZjODc4Y2E5N2NkYTUzMDp7Il9hdXRoX3VzZXJfaGFzaCI6IjU5NzYzMDlhMDY3MTIxNDE1MDUwM2VmZDI2ZGU0NDZjMDE3MTlmYzciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
+        "expire_date": "2017-09-20T06:14:16.400Z"
+    }
+},
+{
+    "model": "projects.project_info",
+    "pk": 1,
+    "fields": {
+        "project_name": "The Hooties",
+        "project_description": "Site built in Angular",
+        "project_image": "images/smartmockups_j777w2zs.png",
+        "project_image_high_res": "images/hooties-high.png"
+    }
+},
+{
+    "model": "projects.project_info",
+    "pk": 2,
+    "fields": {
+        "project_name": "Strava Data",
+        "project_description": "Built on Flask and MongoDB",
+        "project_image": "images/smartmockups_j7781r92.png",
+        "project_image_high_res": "images/strava-highl.png"
+    }
+},
+{
+    "model": "projects.project_info",
+    "pk": 3,
+    "fields": {
+        "project_name": "Splinter and Dust",
+        "project_description": "Built using Django",
+        "project_image": "images/smartmockups_j7799ci3_oZ1uCiU.png",
+        "project_image_high_res": "images/splinter_bAIF4Wx.png"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-09-06T06:16:30.301Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "1",
+        "object_repr": "The Hooties",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-09-06T06:17:05.371Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "2",
+        "object_repr": "Strava Data",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-09-06T06:17:38.661Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "3",
+        "object_repr": "Splinter and Dust",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-09-06T08:24:31.648Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "3",
+        "object_repr": "Splinter and Dust",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"project_image\", \"project_image_high_res\"]}}]"
+    }
+}
+]
