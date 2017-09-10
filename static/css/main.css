@@ -110,9 +110,18 @@ body {
 
 }
 
+strong {
+  color: #6ea9a6;
+}
+
 @media all and (max-width: 700px) {
   .body-container {
     margin-top: 130px;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
   }
 
   .body-container1 {
