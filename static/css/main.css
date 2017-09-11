@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
  }
 
+ a:hover, a:visited, a:link, a:active {
+   text-decoration: none;
+   color: #f2f5f0;
+ }
+
  h1 {
      font-family: 'VT323', monospace;
      font-size: 10em;
@@ -12,6 +17,35 @@ body {
  h2 {
      color: #6b6d70;
      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+ }
+
+ .my-navbar {
+   display: flex;
+   color: inherit;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 2em;
+   width: 100%;
+   height: 100%;
+   background-color: #222;
+   padding-left: 50px;
+   padding-right: 50px;
+ }
+
+ .nav-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .nav-links li {
+   display: inline-block;
+ }
+
+ .nav-links {
+   margin-top: 10px;
  }
 
  .body-container {
@@ -86,25 +120,6 @@ body {
    margin-left: 10px;
  }
 
-.sendbutton.Animate {
-  transition        : .1s linear;
-  /**
-   * Not that ugly as the JavaScript approach.
-   * Easy to maintain, the most portable solution.
-   */
-  -webkit-transform : rotate(7deg);
-}
-
-.sendbutton.Animate1 {
-  transition        : .1s linear;
-  /**
-   * Not that ugly as the JavaScript approach.
-   * Easy to maintain, the most portable solution.
-   */
-  -webkit-transform : rotate(-7deg);
-}
-
-
 .modal-content{
   background-color: #f2f5f0;
 
@@ -114,14 +129,31 @@ strong {
   color: #6ea9a6;
 }
 
+.hide-span {
+  display: none;
+}
+
+
 @media all and (max-width: 700px) {
   .body-container {
-    margin-top: 130px;
+    margin-top: 20px;
   }
 
   .modal-footer {
     display: flex;
     flex-direction: row;
+  }
+
+  .fa-bars {
+    color: #dde0db;
+    text-align: right;
+  }
+
+  .mobile-navabar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .body-container1 {
@@ -130,6 +162,7 @@ strong {
 
   h1 {
     font-size: 5em;
+    margin-top: 0px;
   }
 
   h2 {
@@ -142,6 +175,9 @@ strong {
 
   .body-container2{
       display: none;
+      top:0px;
+      padding-top: 0px;
+      margin-top: 0px;
       margin-bottom: 10px;
       position: relative;
   }
@@ -152,6 +188,36 @@ strong {
     justify-content: center;
   }
 
+  .my-navbar {
+    position: relative;
+    padding-left: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: red 2px solid;
+    border-bottom: red 2px solid;
+  }
+
+
+  .fa-bars {
+    position: absolute;
+    padding-right: 5px;
+    right: 0px;
+    top: 5px;
+  }
+
+  .nav-links li {
+    display: block;
+  }
+
+  .nav-links {
+    padding-left: 0px;
+    display: none;
+  }
+
+  .hide-span {
+    display: block;
+  }
 
 
 }

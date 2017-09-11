@@ -9,7 +9,13 @@ $( document ).ready(function() {
           $('.body-container').css("margin-top", "130px")
            $('.body-container2').slideUp(1000);
       })
+      $('.fa-bars').click(function(){
+        $('.nav-links').slideToggle(1000);
+      })
     }
+
+
+
     if (windowWidth >= 601 ){
       $('#portfolio').click(function() {
           $('.body-container1').slideToggle(1000);
