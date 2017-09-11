@@ -133,6 +133,20 @@ strong {
   display: none;
 }
 
+.my-face {
+  background-image: url("profile.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 50px;
+  z-index: -1;
+}
+
 
 @media all and (max-width: 700px) {
   .body-container {
@@ -197,6 +211,7 @@ strong {
     border-top: red 2px solid;
     border-bottom: red 2px solid;
   }
+
 
 
   .fa-bars {

@@ -1,3 +1,10 @@
+function faceMove(){
+    var number = Math.floor(Math.random() * 101);
+    var div = $(".my-face");
+    div.animate({left: number + "%"}, 2000);
+    div.animate({top: number + "%"}, 2000, faceMove);
+  }
+
 $( document ).ready(function() {
     var windowWidth = $(window).width();
     if(windowWidth < 600){
@@ -14,8 +21,6 @@ $( document ).ready(function() {
       })
     }
 
-
-
     if (windowWidth >= 601 ){
       $('#portfolio').click(function() {
           $('.body-container1').slideToggle(1000);
@@ -25,6 +30,7 @@ $( document ).ready(function() {
       })
     }
 
+faceMove()
 
   $('.sendbutton').mouseover(function() {
       $(this).css({'border':'#363531 4px solid','color':'#6b6d70','background-color':'black'});
