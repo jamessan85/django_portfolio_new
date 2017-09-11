@@ -135,7 +135,7 @@ strong {
 
 .my-face {
   background-image: url("profile.png");
-  background-size: contain;
+  background-size:100% 100%;
   background-repeat:no-repeat;
   position: fixed;
   height: 50px;
