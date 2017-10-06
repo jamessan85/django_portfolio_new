@@ -9,6 +9,8 @@ class Project_Info(models.Model):
     project_description = (models.TextField(max_length=200, null=True))
     project_image = (models.ImageField(upload_to="images", null=True))
     project_image_high_res = (models.ImageField(upload_to="images", null=True))
+    project_git = (models.CharField(max_length=100, null=True))
+    project_link = (models.CharField(max_length=100, null=True))
 
     def __unicode__(self):
         return self.project_name
