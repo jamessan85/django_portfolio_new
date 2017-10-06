@@ -22,7 +22,7 @@
     "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$36000$hM2HMhku3mCo$+dFVBe3eseAF79e4T2E25QPzCFTKRAV9nf+VNwVYMZs=",
-        "last_login": "2017-09-06T06:14:16.389Z",
+        "last_login": "2017-10-06T14:06:15.917Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -45,6 +45,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "aot1j8q09eo3ztr8sv1annkadq98n8eo",
+    "fields": {
+        "session_data": "NGQ1N2ZmNzRhYmVjMTY5NzkxMTYyY2VhNmU2MDQ5ZDRhYTQ4ZDE3Yjp7Il9hdXRoX3VzZXJfaGFzaCI6ImQ5YzkzYWE1MjU5OWM0MTgwYWQ1YzJjOWQ3NTM2MzJiZGI1YTU2NWMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
+        "expire_date": "2017-10-20T14:06:15.934Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "bz95wehmnxyr0qdt5swyjaaoj9feg0jp",
     "fields": {
         "session_data": "ZDJhOTljZTFlMmM3ZTBlOWNmMDdkNzFlYWZjODc4Y2E5N2NkYTUzMDp7Il9hdXRoX3VzZXJfaGFzaCI6IjU5NzYzMDlhMDY3MTIxNDE1MDUwM2VmZDI2ZGU0NDZjMDE3MTlmYzciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=",
@@ -58,7 +66,9 @@
         "project_name": "The Hooties",
         "project_description": "Site built in Angular",
         "project_image": "images/smartmockups_j777w2zs.png",
-        "project_image_high_res": "images/hooties-high.png"
+        "project_image_high_res": "images/hooties-high.png",
+        "project_git": "https://github.com/jamessan85/band",
+        "project_link": "http://band.sandmandesign.co.uk/"
     }
 },
 {
@@ -68,7 +78,9 @@
         "project_name": "Strava Data",
         "project_description": "Built on Flask and MongoDB",
         "project_image": "images/smartmockups_j7781r92.png",
-        "project_image_high_res": "images/strava-highl.png"
+        "project_image_high_res": "images/strava-highl.png",
+        "project_git": "https://github.com/jamessan85/strava_data",
+        "project_link": "https://quiet-cove-81233.herokuapp.com/"
     }
 },
 {
@@ -78,7 +90,9 @@
         "project_name": "Splinter and Dust",
         "project_description": "Built using Django",
         "project_image": "images/smartmockups_j7799ci3_oZ1uCiU.png",
-        "project_image_high_res": "images/splinter_bAIF4Wx.png"
+        "project_image_high_res": "images/splinter_bAIF4Wx.png",
+        "project_git": "https://github.com/jamessan85/splinter_and_dust",
+        "project_link": "https://splinter-and-dust.herokuapp.com/"
     }
 },
 {
@@ -151,6 +165,60 @@
         "object_repr": "Splinter and Dust",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"project_image\", \"project_image_high_res\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-10-06T14:07:05.280Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "3",
+        "object_repr": "Splinter and Dust",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"project_git\", \"project_link\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-10-06T14:07:39.070Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "2",
+        "object_repr": "Strava Data",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"project_git\", \"project_link\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2017-10-06T14:08:23.888Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "projects",
+            "project_info"
+        ],
+        "object_id": "1",
+        "object_repr": "The Hooties",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"project_git\", \"project_link\"]}}]"
     }
 }
 ]
