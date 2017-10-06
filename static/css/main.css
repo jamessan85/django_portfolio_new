@@ -42,6 +42,12 @@ body {
 
  .nav-links li {
    display: inline-block;
+   font-size: 20px;
+   border-bottom: solid 2px #6ea9a6
+ }
+
+ .nav-links a:hover {
+   color: grey;
  }
 
  .nav-links {
@@ -147,10 +153,22 @@ strong {
   z-index: -1;
 }
 
+.mobile {
+  display: none;
+}
+
 
 @media all and (max-width: 700px) {
   .body-container {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body-container .row {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .modal-footer {
@@ -180,7 +198,7 @@ strong {
   }
 
   h2 {
-    font-size:1em;
+    font-size:2em;
   }
 
   .h2-size {
@@ -204,15 +222,12 @@ strong {
 
   .my-navbar {
     position: relative;
-    padding-left: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    border-top: red 2px solid;
-    border-bottom: red 2px solid;
   }
-
-
 
   .fa-bars {
     position: absolute;
@@ -225,13 +240,29 @@ strong {
     display: block;
   }
 
+  .nav-links li:first-child {
+    border-top: solid 2px #6ea9a6;
+  }
+
   .nav-links {
     padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
     display: none;
   }
 
   .hide-span {
     display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block
   }
 
 

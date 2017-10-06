@@ -13,7 +13,7 @@ $( document ).ready(function() {
           $('.body-container2').slideToggle(1000)
       })
       $('.upbutton').click(function() {
-          $('.body-container').css("margin-top", "130px")
+          $('.body-container').css("margin-top", "10px")
            $('.body-container2').slideUp(1000);
       })
       $('.fa-bars').click(function(){
@@ -38,4 +38,5 @@ faceMove()
   $('.sendbutton').mouseleave(function() {
     $(this).css({'border':'#363531 4px solid','color':'#6b6d70','background-color':'#dde0db'});
   })
+
 })
