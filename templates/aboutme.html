@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load bootstrap_tags %}
+{% load static %}
+<div class="body-container">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="aboutme">James Sanderson - Web Developer</h2>
+      <p>
+        I have worked in IT for over 10 years, mainly working on the infrastructure side of things, in 2016 I decided I wanted a change. So I did just that and decided to embark on a new challange and funded myself to complete a succesful diploma in Full Stack Web development. What I learnt are the most up to date and current in Web Development.
+        These include creating responsive and mobile freindly web apps using AngularJS and using Django backend so you yourself can update your own content without needing to worry on the the technical side. You can view my portfolio to see the pages I have created. Listed below are all the technologies I have learnt.
+      </p>
+      <br>
+      <p>
+      </p>
+      <h2><strong><i class="devicon-html5-plain"></i>HTML / <i class="devicon-css3-plain"></i>CSS / <i class="devicon-django-plain"></i>Django / <i class="devicon-angularjs-plain"></i>AngularJs / <i class="devicon-javascript-plain"></i>Javascript / <i class="devicon-jquery-plain"></i>jQuery / <i class="devicon-python-plain"></i>Python</strong></h2>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+  <div class="row">
+    <h2>Interested - Contact me below and let me show you what I can do for you</h2>
+    <div class="col-sm-6">
+      <h2 class="aboutme">Contact Details</h2>
+      <p>
+        Telephone: 07725577936
+        <br />
+        Email: jamessandersoon@gmail.com
+      </p>
+    </div>
+    <div class="col-sm-6" id="text-align">
+      <h2 class="aboutme">Contact Form</h2>
+      <form role="form" action="" method="post">
+          {% csrf_token %}
+          {{ form|as_bootstrap }}
+
+          <input type="submit" class="sendbutton" value="Submit"/>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+{% endblock %}
