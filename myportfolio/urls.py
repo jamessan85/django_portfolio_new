@@ -17,8 +17,8 @@ from django.conf.urls import url
 from django.contrib import admin
 from projects import views
 from django.views.static import serve
-from settings import MEDIA_ROOT
-#from settings.base import MEDIA_ROOT
+#from settings import MEDIA_ROOT
+from settings.base import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
