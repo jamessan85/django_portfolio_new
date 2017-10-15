@@ -20,21 +20,11 @@
   </div>
   <div class="container">
   <div class="row">
-    <h2>Interested - Contact me below and let me show you what I can do for you</h2>
-    <div class="col-sm-6">
-      <h2 class="aboutme">Contact Details</h2>
-      <p>
-        Telephone: 07725577936
-        <br />
-        Email: jamessandersoon@gmail.com
-      </p>
-    </div>
-    <div class="col-sm-6" id="text-align">
+    <div class="col-sm-6 col-sm-offset-3" id="text-align">
       <h2 class="aboutme">Contact Form</h2>
       <form role="form" action="" method="post">
           {% csrf_token %}
           {{ form|as_bootstrap }}
-
           <input type="submit" class="sendbutton" value="Submit"/>
       </form>
       </div>

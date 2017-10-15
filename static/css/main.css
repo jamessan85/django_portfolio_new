@@ -15,6 +15,10 @@ body {
      font-size: 10em;
  }
 
+ .bg-color h1 {
+   margin-top: 0px;
+ }
+
  h2 {
      color: #6b6d70;
      font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -27,6 +31,10 @@ body {
 
 #text-align {
   text-align: left;
+}
+
+#align {
+  text-align: center;
 }
 
  .my-navbar {
@@ -49,14 +57,23 @@ body {
    justify-content: space-between;
    align-items: center;
    padding: 2px;
-   border: solid 2px #6ea9a6
+   border-bottom: solid 2px #6ea9a6
+ }
+
+ .nav-header a:hover {
+   color: grey;
  }
 
  .nav-links li {
    display: inline-block;
    font-size: 20px;
    padding: 2px;
-   border: solid 2px #6ea9a6
+   padding-right: 10px;
+   border-right: solid 2px #6ea9a6;
+ }
+
+ .nav-links li:last-child {
+   border-right: none;
  }
 
  .nav-links a:hover {
@@ -93,7 +110,6 @@ body {
      height: 100%;
      margin-bottom: 50px;
      background-color:#222;
-     padding-top: 25px;
  }
 
  .body-container2{
@@ -121,6 +137,7 @@ body {
 
  .col-sm-6 {
      text-align: center;
+     margin-bottom: 20px;
  }
 
  .form {
