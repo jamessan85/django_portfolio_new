@@ -8,7 +8,7 @@ function faceMove(){
 $( document ).ready(function() {
     var windowWidth = $(window).width();
     if(windowWidth < 600){
-      $('#portfolio').click(function() {
+      $('.portfolio').click(function() {
           $('.body-container').css("margin-top", "10px")
           $('.body-container2').slideToggle(1000)
       })
@@ -22,7 +22,7 @@ $( document ).ready(function() {
     }
 
     if (windowWidth >= 601 ){
-      $('#portfolio').click(function() {
+      $('.portfolio').click(function() {
           $('.body-container1').slideToggle(1000);
       })
       $('.upbutton').click(function() {
