@@ -28,7 +28,7 @@
     <div class="bg-color"><h1>Projects</h1></div>
     <div class="row" id="align">
         {% for p in projects %}
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="flex-center">
           <h2>{{ p.project_name }}</h2>
           <a href="{% url 'projects' p.id %}"><img src="/media/{{ p.project_image }}" width="350" height="250"></a>
         </div>
