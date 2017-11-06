@@ -26,5 +26,5 @@ urlpatterns = [
     url(r'^projects/(?P<id>\w+)/$', views.product_detail, name='projects'),
     url(r'^aboutme/$', views.about_me, name='aboutme'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
-    # url(r'^contact/$', views.contact, name='contact'),
+    #url(r'^contact/$', views.contact, name='contact'),
 ]
